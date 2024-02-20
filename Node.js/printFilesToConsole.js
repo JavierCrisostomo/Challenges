@@ -1,4 +1,5 @@
 /*
+Problem Statement:
 In the JavaScript file, write a program to first create a file in the
 current directory with the name newFile.txt filled with any content.
 Them, using exec, print to the console all the files in the current
