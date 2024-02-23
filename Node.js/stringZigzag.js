@@ -8,7 +8,8 @@ the following if you print it in a zig-zag pattern with 3 rows:
                c      r       e
                 o   e   b   t
                   d       y  
-Your program should return the word formed by combining the characters as you iterate through each row, so for this example your program should return the string creoebtdy.
+Your program should return the word formed by combining the characters as you iterate through 
+each row, so for this example your program should return the string creoebtdy.
 Examples
       Input: ["cat", "5"]
       Output: cat
