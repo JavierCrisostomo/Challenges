@@ -9,7 +9,7 @@
 // input: "{()[]()}" is valid
 // Solve without regex
 
-function countBrackets(str) {
+function isBalancedParenthesis(str) {
   const stack = [];
   const openBrackets = ["(", "{", "["];
   const closeBrackets = [")", "}", "]"];
@@ -34,11 +34,14 @@ function countBrackets(str) {
 }
 
 // Code to test the function
-console.log(countBrackets("(ert{ewrt345[234]234}2345)")); // true
-console.log(countBrackets("(})")); // false
-console.log(countBrackets("{(})")); // false
-console.log(countBrackets("{})")); // false
-console.log(countBrackets("}{")); // false
-console.log(countBrackets("{([]")); // false
-console.log(countBrackets("{(({([]")); // false
-console.log(countBrackets("{()[]()}")); // true
+console.log(isBalancedParenthesis("(ert{ewrt345[234]234}2345)")); // true
+console.log(isBalancedParenthesis("(})")); // false
+console.log(isBalancedParenthesis("{(})")); // false
+console.log(isBalancedParenthesis("{})")); // false
+console.log(isBalancedParenthesis("}{")); // false
+console.log(isBalancedParenthesis("{([]")); // false
+console.log(isBalancedParenthesis("{(({([]")); // false
+console.log(isBalancedParenthesis("{()[]()}")); // true
+
+// Time complexity: O(n)
+// Space complexity: O(n)
